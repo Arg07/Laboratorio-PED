@@ -1,0 +1,29 @@
+/*
+JOSE ARMANDO ARGUETA PORTILLO 00129619
+lABO 02
+EJERCICIO 7
+*/
+#include <iostream>
+#include <cmath>
+using namespace std;
+int recursiva(int a=0, int b=0){
+    int x = a+1;
+	if(a==b){
+	    cout << "Fin de la lista" <<endl;
+	}else{
+	    cout<<x<<endl;
+	    recursiva();
+	}
+
+}
+int main(){
+    cout << "Lista"<<endl;
+	cout << "ingrese el valor de inicio A"<<endl;
+	int a;
+	cin>> a;
+	cout << "ingrese el valor de fin B"<<endl;
+	int b;
+	cin>> b;
+	cout<<"los enteros entre A y B son: "<<endl;
+    recursiva(a,b);
+}
